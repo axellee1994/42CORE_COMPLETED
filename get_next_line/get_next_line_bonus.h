@@ -6,7 +6,7 @@
 /*   By: axlee <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 13:22:24 by axlee             #+#    #+#             */
-/*   Updated: 2023/10/14 16:26:58 by axlee            ###   ########.fr       */
+/*   Updated: 2023/10/15 02:04:42 by axlee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@
 
 # endif
 
-/*Retrieves index of first appearance of i in s, or -1 */ 
+/*Retrieves index of first appearance of i in s, or -1 */
 
 int		ft_strchr_index(const char *s, int c);
 

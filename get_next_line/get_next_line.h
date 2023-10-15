@@ -6,7 +6,7 @@
 /*   By: axlee <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 13:22:24 by axlee             #+#    #+#             */
-/*   Updated: 2023/10/14 15:26:19 by axlee            ###   ########.fr       */
+/*   Updated: 2023/10/15 02:04:20 by axlee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,11 @@
 
 # endif
 
-/*Retrieves index of first appearance of i in s, or -1 */ 
+/*Retrieves index of first appearance of i in s, or -1 */
 
 int		ft_strchr_index(const char *s, int c);
 
-/* Retrieves next line from given gile descriptor */
+/* Retrieves next line from given file descriptor */
 
 char	*get_next_line(int fd);
 

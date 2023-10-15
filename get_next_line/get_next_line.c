@@ -6,7 +6,7 @@
 /*   By: axlee <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 12:04:39 by axlee             #+#    #+#             */
-/*   Updated: 2023/10/14 16:31:58 by axlee            ###   ########.fr       */
+/*   Updated: 2023/10/15 02:02:26 by axlee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,10 @@ char	*ft_newread(int fd)
 
 	aux = malloc(BUFFER_SIZE + 1);
 	if (!aux)
-		return (NULL);
+		return (free(aux), NULL);
 	nbytes = read(fd, aux, BUFFER_SIZE);
 	if (nbytes < 0)
-	{
-		free(aux);
-		return (NULL);
-	}
+		return (free(aux), NULL);
 	aux[nbytes] = '\0';
 	return (aux);
 }
